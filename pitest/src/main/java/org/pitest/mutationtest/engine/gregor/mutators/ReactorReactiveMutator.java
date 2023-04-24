@@ -25,17 +25,13 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "defaultIfEmpty",
                                           "delayElements",
                                           "delaySequence",
-                                          "delaySubscription",
                                           "delayUntil",
-                                          "distinct",
-                                          "distinctUntilChanged",
                                           "doAfterTerminate",
                                           "doFinally",
                                           "doFirst",
                                           "doOnCancel",
                                           "doOnComplete",
                                           "doOnEach",
-                                          "doOnError",
                                           "doOnNext",
                                           "doOnRequest",
                                           "doOnSubscribe",
@@ -58,10 +54,6 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "onBackpressureError",
                                           "onBackpressureLatest",
                                           "onErrorComplete",
-                                          "onErrorContinue",
-                                          "onErrorMap",
-                                          "onErrorResume",
-                                          "onErrorReturn",
                                           "onErrorStop",
                                           "onTerminateDetach",
                                           "or",
@@ -70,9 +62,6 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "repeatWhen",
                                           "retry",
                                           "retryWhen",
-                                          "sample",
-                                          "sampleFirst",
-                                          "scan",
                                           "share",
                                           "skip",
                                           "skipLast",
@@ -90,8 +79,7 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "takeUntil",
                                           "takeUntilOther",
                                           "takeWhile",
-                                          "tap",
-                                          "timeout"
+                                          "tap"
   );
   public static final List MONO_METHODS = List.of(
                                           "cache",
@@ -103,7 +91,6 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "contextWrite",
                                           "defaultIfEmpty",
                                           "delayElement",
-                                          "delaySubscription",
                                           "delayUntil",
                                           "doAfterSuccessOrError",
                                           "doAfterTerminate",
@@ -111,7 +98,6 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "doFirst",
                                           "doOnCancel",
                                           "doOnEach",
-                                          "doOnError",
                                           "doOnNext",
                                           "doOnRequest",
                                           "doOnSubscribe",
@@ -126,10 +112,6 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "metrics",
                                           "name",
                                           "onErrorComplete",
-                                          "onErrorContinue",
-                                          "onErrorMap",
-                                          "onErrorResume",
-                                          "onErrorReturn",
                                           "onErrorStop",
                                           "onTerminateDetach",
                                           "or",
@@ -145,8 +127,7 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "tag",
                                           "take",
                                           "takeUntilOther",
-                                          "tap",
-                                          "timeout"
+                                          "tap"
   );
 
   @Override
