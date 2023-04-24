@@ -15,11 +15,12 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
   public static final String REACTOR_MONO_CLASS = "reactor/core/publisher/Mono";
 
   public static final List FLUX_METHODS = List.of(
-                                 "cache",
+                                          "cache",
                                           "cancelOn",
                                           "checkpoint",
                                           "concatWith",
                                           "concatWithValues",
+                                          "contextCapture",
                                           "contextWrite",
                                           "defaultIfEmpty",
                                           "delayElements",
@@ -56,6 +57,7 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "onBackpressureDrop",
                                           "onBackpressureError",
                                           "onBackpressureLatest",
+                                          "onErrorComplete",
                                           "onErrorContinue",
                                           "onErrorMap",
                                           "onErrorResume",
@@ -88,6 +90,7 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "takeUntil",
                                           "takeUntilOther",
                                           "takeWhile",
+                                          "tap",
                                           "timeout"
   );
   public static final List MONO_METHODS = List.of(
@@ -96,6 +99,7 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "cacheInvalidateWhen",
                                           "cancelOn",
                                           "checkpoint",
+                                          "contextCapture",
                                           "contextWrite",
                                           "defaultIfEmpty",
                                           "delayElement",
@@ -121,6 +125,7 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "log",
                                           "metrics",
                                           "name",
+                                          "onErrorComplete",
                                           "onErrorContinue",
                                           "onErrorMap",
                                           "onErrorResume",
@@ -140,6 +145,7 @@ public enum ReactorReactiveMutator implements MethodMutatorFactory {
                                           "tag",
                                           "take",
                                           "takeUntilOther",
+                                          "tap",
                                           "timeout"
   );
 
